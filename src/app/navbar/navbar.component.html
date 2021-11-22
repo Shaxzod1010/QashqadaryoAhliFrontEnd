@@ -1,0 +1,43 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="navbar">
+    <div class="container">
+        <div class="one">
+            <a routerLink="/"><img class="img" src="../../assets/channels4_profile.jpg"></a>
+        </div>
+        <div class="two">
+
+            <a routerLink="/">
+                <h1 class="nom">Кашкадарё Ахли</h1>
+            </a>
+
+            <a routerLink="filter">
+                <mat-icon class="search">search</mat-icon>
+            </a>
+
+        </div>
+        <div class="three">
+            <div class="language">
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle value="bold">Uz</mat-button-toggle>
+                    <mat-button-toggle value="bold">Уз</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+
+            <mat-icon id="icon-home" (click)="sideNavOpen.emit(true)">menu</mat-icon>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <ul class="list">
+        <li style="border-left: 3px solid lightgrey; padding-left: 20px;"><a routerLink="uzbekiston"> Uzbekiston</a>
+        </li>
+        <li><a routerLink="/"> Jahon</a></li>
+        <li><a routerLink="/"> Ijtimoiy</a></li>
+        <li><a routerLink="/"> Iqtisodiy</a></li>
+        <li><a routerLink="/"> Siyosat</a></li>
+        <li><a routerLink="/"> Sport</a></li>
+    </ul>
+</div>
+<hr>
